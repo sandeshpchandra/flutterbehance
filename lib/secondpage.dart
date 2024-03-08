@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 import 'discoveryscreen.dart';
+import 'homepage.dart';
 import 'learningpage.dart';
 
 class SecondPage extends StatefulWidget {
@@ -14,15 +15,7 @@ class SecondPage extends StatefulWidget {
 class _SecondPageState extends State<SecondPage> {
   int selectedIndex = 0;
   static List<Widget> screens = [
-    Container(
-      color: Colors.white,
-      child: Center(
-        child: Text(
-          "location",
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
-    ),
+    HomeScreen(),
     DiscoveryScreen(),
     learningpage(),
     Container(
