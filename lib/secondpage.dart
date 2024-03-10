@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+import 'careerpage.dart';
 import 'discoveryscreen.dart';
 import 'homepage.dart';
 import 'learningpage.dart';
+import 'profilepage.dart';
 
 class SecondPage extends StatefulWidget {
   const SecondPage({Key? key}) : super(key: key);
@@ -13,28 +15,13 @@ class SecondPage extends StatefulWidget {
 }
 
 class _SecondPageState extends State<SecondPage> {
-  int selectedIndex = 0;
+  int selectedIndex = 1;
   static List<Widget> screens = [
     HomeScreen(),
     DiscoveryScreen(),
     learningpage(),
-    Container(
-      color: Colors.teal,
-      child: Center(
-        child: Text(
-          "profile",
-          // style: optionStyle,
-        ),
-      ),
-    ),
-    Container(
-      color: Colors.teal,
-      child: Center(
-        child: Text(
-          "jugdjsj",
-        ),
-      ),
-    ),
+    CareerPage(),
+    ProfilePage()
   ];
 
   @override
